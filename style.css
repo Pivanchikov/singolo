@@ -623,7 +623,7 @@ ul{
 }
 
 .second_item::before {
-    content: url(assets/images/phone.png);
+    content: url(assets/images/phone1.png);
     position: relative;
     left: -7px;
     top: 1px;
