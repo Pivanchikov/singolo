@@ -5,43 +5,57 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
 </head>
 <body>
-        <header class="header">
+        <header  class="header">
             <div class="container all__header">
                 <div class="logo__header">
                      <h1>SINGOLO <span>*</span></h1>
                 </div>
                 <nav class="navigation__header">
                     <ul class="list__header">
-                       <li><a href="#" class="active">HOME</a></li>
-                       <li><a href="#">SERVICES</a></li>
-                       <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                       <li ><a href="#start_page"  class="active" id ="home_logo">HOME</a></li>
+                       <li ><a href="#services"  id ="services_logo">SERVICES</a></li>
+                       <li ><a href="#portfolio"  id ="portfolio_logo">PORTFOLIO</a></li>
+                       <li ><a href="#about" id ="about_logo"> ABOUT</a></li>
+                       <li ><a href="#contact" id ="contact_logo">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="slider">
+        <div class="slider" id="start_page">
             <div class="container all_slider">
-                <div class="phone">
-                    <div class="phone_vertic">
-                        <img src="assets/images/phone_vertic.png" alt="phone-vertic">
+               <div class="item_slider" >
+                    <div class="phone">
+                        <div class="phone_vertic">
+                            <img src="assets/images/phone_vertic.png" alt="phone-vertic">
+                            <div class="button__iphone_vertical" onclick="screenOnvertical()"></div>
+                        </div>
+                        <div class="phone_horizont">
+                            <img src="assets/images/phone_horizont.png" alt="phone-horizont">
+                            <div class="button__iphone" onclick="screenOnhorisont()"></div>
+                        </div>
                     </div>
-                    <div class="phone_horizont">
-                        <img src="assets/images/phone_horizont.png" alt="phone-horizont">
+                 </div>
+                 <div class="item_slider not_active" >
+                    <div class="three_phone">
+                        <div class="phone">
+                            <img src="assets/images/slide_2.png" alt="three_phone"> 
+                        </div>   
                     </div>
                 </div>
-                <div class="arrow__left">
-                    <a href="#"><img src="assets/images/arrow_left.png" alt="arrow_left"></a>
+                <div class="arrow__left" onclick="minusSlide()">
+                    <img src="assets/images/arrow_left.png" alt="arrow_left">
                 </div>
-                <div class="arrow__right">
-                    <a href="#"><img src="assets/images/arrow_right.png" alt="arrow_right"></a>
+                <div class="arrow__right" onclick="plusSlide()" >
+                    <img src="assets/images/arrow_right.png" alt="arrow_right">
                 </div>
-            </div>
+            </div >
+            <div id="services" class="anchor"></div>
         </div>
-        <main class="main">
+        
+        <main class="main" >
             <div class="container">
             <div class="text__main">
                 <h2>Our Services</h2>
@@ -117,61 +131,63 @@
                 </div>
             </div>
         </div>
+        <div id="portfolio" class="anchor"></div>
     </main>
-    <div class="portfolio">
+    <div class="portfolio" >
         <div class="container">
             <div class="portfolio__logo">Portfolio</div>
             <div class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
             <nav class="portfolio__navigation">
                 <ul>
-                    <li>All</li>
-                    <li>Web Design</li>
-                    <li>Graphic Design</li>
-                    <li>Artwork</li>
+                    <li onclick="active(this)">All</li>
+                    <li onclick="active(this)">Web Design</li>
+                    <li onclick="active(this)">Graphic Design</li>
+                    <li onclick="active(this)">Artwork</li>
                 </ul>
             </nav>
             <div class="portfolio__allImage">
-                <div class="portfolio__image">
-                    <img class="ship" src="assets/images/ship.png" alt="ship">
+                <div class="portfolio__image" onclick="border(this)">
+                    <img class="ship" src="assets/images/ship.png" alt="ship" >
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image " onclick="border(this)">
                     <img class="smile" src="assets/images/smile.png" alt="smile">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="town" src="assets/images/town.png" alt="town">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="robot" src="assets/images/robot.png" alt="robot">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="rabbits" src="assets/images/rabbits.png" alt="rabbits">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="first_image" src="assets/images/1.png" alt="image">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="second_image" src="assets/images/2.png" alt="image2">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="birds" src="assets/images/birds.png" alt="birds">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="green_monster" src="assets/images/green_monster.png" alt="green_monster">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="image_text" src="assets/images/text.png" alt="text">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="white_monster" src="assets/images/white_monster.png" alt="white_monster">
                 </div>
-                <div class="portfolio__image">
+                <div class="portfolio__image" onclick="border(this)">
                     <img class="image_Project" src="assets/images/Project.png" alt="Project" >
                 </div>
                 
             </div>
         </div>
+        <div id="about" class="anchor1"></div>
     </div>
-    <div class="about">
+    <div class="about" >
         <div class="container">
             <div class="about__logo">About Us</div>
             <div class="about__info">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
@@ -241,20 +257,29 @@
                 </div>
             </div>
         </div>
+        <div id="contact" class="anchor"></div>
     </div>
-    <div class="contact">
+    <div class="contact" >
         <div class="container">
             <div class="logo__contact">Get a Quote</div>
             <div class="text__contact">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
             <div class="block__contact">
                 <div>
-                    <form action="#" class="form" method="post">
+                    <form action="#" class="form" method="post" onsubmit="modal(); return false" name="myForm">
                         <input type="text" name="name" placeholder="Name (Required)" required>
                         <input type="email" name="email" placeholder="Email (Required)" required>
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea  name="describe" class="input__describe" placeholder="Describe your project in detail..." ></textarea>
-                        <input type="submit" class="submit">
+                        <input type="text" name="subject" placeholder="Subject" id="txt" >
+                        <textarea  name="describe" id="describe" class="input__describe" placeholder="Describe your project in detail..." maxlength="1000"></textarea>
+                        <input type="submit" class="submit" >
                    </form>
+                   <div id="Modal" class="modal">
+                    <div class="modal-content">
+                        <p>The letter was sent</p>
+                        <p id= "Subject"> </p>
+                        <p id= "Description"> </p>
+                        <span class="close" onclick="modal()">Ок</span>
+                    </div>
+                </div>
                 </div>
                 <div class="info__contact">
                     <div class="logo__info">Contact Information</div>
