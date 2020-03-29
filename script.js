@@ -49,7 +49,7 @@ window.onscroll = function(){
     for(let i = 0; i< elem.length; i++){
       elem[i].style.color ='#fff';
     }
-    if( html.scrollTop >= 0 && html.scrollTop < 600) { //alert()
+    if( html.scrollTop >= 0 && html.scrollTop < 600) {
         let elem = document.getElementById('home_logo');
         elem.style.color ='#f06c64';
     }
@@ -69,6 +69,32 @@ window.onscroll = function(){
         let elem = document.getElementById('contact_logo');
         elem.style.color ='#f06c64';
      }
+
+     if (window.innerWidth > 768 && window.innerWidth < 1020) {
+      for(let i = 0; i< elem.length; i++){
+        elem[i].style.color ='#fff';
+      }
+      if( html.scrollTop >= 0 && html.scrollTop < 600) {
+          let elem = document.getElementById('home_logo');
+          elem.style.color ='#f06c64';
+      }
+      if( html.scrollTop >= 600  && html.scrollTop < 1300) { 
+          let elem = document.getElementById('services_logo');
+          elem.style.color ='#f06c64';
+      }
+      if( html.scrollTop >= 1300  && html.scrollTop < 2600) { 
+          let elem = document.getElementById('portfolio_logo');
+          elem.style.color ='#f06c64';
+      }
+      if( html.scrollTop >= 2600  && html.scrollTop < 3400) { 
+          let elem = document.getElementById('about_logo');
+          elem.style.color ='#f06c64';
+      }
+       if( html.scrollTop >= 3400) { 
+          let elem = document.getElementById('contact_logo');
+          elem.style.color ='#f06c64';
+       }
+    }
   }
   
   
