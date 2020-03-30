@@ -10,8 +10,28 @@
 <body>
         <header  class="header">
             <div class="container all__header">
-                <div class="burger__menu">
+                <div class="burger__icon" onclick= "getOn ()" id="burger__ico">
                     <img src="assets/images/Burger-menu-icon.png" alt="menu">
+                </div>
+                <div class="burger__menu" id="burger__menuActive">
+                    <div class="burger__header">
+                        <div class="burger__logo" onclick= "getOff ()">
+                            <img src="assets/images/Burger-menu-icon2.png" alt="menu">
+                        </div>
+                        <div class="burger__singolo">
+                            <h1>SINGOLO <span>*</span></h1>
+                        </div>
+                    </div>
+                    <nav class="burger__navigation">
+                        <ul>
+                            <li ><a href="#start_page" class="active" onclick= "getOff ()" id="home_logo__mobile">HOME</a></li>
+                            <li ><a href="#services"  onclick= "getOff ()" id="services_logo__mobile">SERVICES</a></li>
+                            <li ><a href="#portfolio" onclick= "getOff ()" id="portfolio_logo__mobile">PORTFOLIO</a></li>
+                            <li ><a href="#about" onclick= "getOff ()" id="about_logo__mobile"> ABOUT</a></li>
+                            <li ><a href="#contact" onclick= "getOff ()" id="contact_logo__mobile"> CONTACT</a></li>
+                         </ul>
+                    </nav>
+
                 </div>
                 <div class="logo__header">
                      <h1>SINGOLO <span>*</span></h1>

@@ -863,10 +863,64 @@ ul{
 
     .copy__footer {    font-size: 18px;}
 }
-.burger__menu {
+.burger__icon {
     display: none;
 }
 
+.burger__header{
+    display: flex;
+}
+
+.burger__logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 32px;
+    margin-left: 75px;
+    margin-right: -20px;
+    transform: scale(2.5);
+}
+.burger__singolo{
+        color: #fff;
+        padding-left: 42px;
+        font-family: "Lato_Bold";
+        line-height: 28px;
+        font-size: 25px;
+        letter-spacing: -1px;
+        margin-top: 20px;
+        padding-bottom: 2px;
+}
+
+.burger__singolo h1 span {
+    color: #f06c64;
+    margin-left: -3px;
+    font-family: "lato_bold";
+}
+
+.burger__menu {
+    position: fixed;
+    height: 100%;
+    background-color: #2d303a;
+    width: 75%;
+    display: none;
+    overflow-y: hidden;
+}
+
+.burger__menu ul li{
+    display: list-item;
+    list-style-type: none;
+    font-size: 90px;
+}
+.burger__menu ul li a{
+    font-size: 50px;
+}
+
+.burger__navigation {
+    display: flex;
+    position: relative;
+    height: 80%;
+    align-items: center;
+    padding-left: 190px;
+}
 @media screen 
   and (min-device-width: 320px) 
   and (max-device-width: 767px) {
@@ -1027,17 +1081,19 @@ ul{
     /*Header*/
     .navigation__header { display: none;}
     .logo__header {  display: block;
-        font-size: 40px;
+                     font-size: 40px;
                      margin-top: 22px;
                      padding-left: 0px;
                     margin-left: 1px}
     .header {height: 57px;}
-    .burger__menu {display: block;
-    width: 50px;
+    .burger__icon {display: block;
+     width: 50px;
      height: 50px;
      margin-left: 110px;
      margin-right: 150px;
      transform: scale(2.5);
     }
     .all__header {justify-content: start;}
+
+    .burger__menu { }
 }

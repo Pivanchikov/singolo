@@ -70,7 +70,9 @@ window.onscroll = function(){
         elem.style.color ='#f06c64';
      }
 
-     if (window.innerWidth > 768 && window.innerWidth < 1020) {
+
+
+    if (window.innerWidth > 768 && window.innerWidth < 1020) {
       for(let i = 0; i< elem.length; i++){
         elem[i].style.color ='#fff';
       }
@@ -96,7 +98,6 @@ window.onscroll = function(){
        }
     }
   }
-  
   
 
 //active portfolio and moving images
@@ -238,3 +239,18 @@ function showSlides(n) {
       }, 20 )
   }
 
+// burger menu
+ function getOn () {
+   let active = document.getElementById('burger__menuActive');
+   active.style.display = 'block'
+   let actives = document.getElementsByTagName('body');
+   actives[0].style.position = 'fixed'
+
+ }
+
+ function getOff () {
+  let active = document.getElementById('burger__menuActive');
+  active.style.display = 'none'
+  let actives = document.getElementsByTagName('body');
+   actives[0].style.position = 'relative'
+}
